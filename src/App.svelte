@@ -3,11 +3,13 @@
 
 	let articles = [];
 	let results = [];
+	// ToDo: enter an API key [ https://developer.nytimes.com/get-started ]
+	let apiKey = '';
 
 	onMount(async () => {
-		const res = await fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=`);
+		const res = await fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + apiKey);
 		articles = await res.json();
-		// (line below) added due to the structure of an api
+		// (Line below) added due to the structure of an API
 		results = articles.results;
 	});
 </script>
