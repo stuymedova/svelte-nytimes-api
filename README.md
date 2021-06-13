@@ -9,7 +9,7 @@ Svelte Framework + content fetched from The New York Times Top Stories API
     └── App.svelte
 ```
 
-## Prerequesites
+## Prerequisites
 
 [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
 
