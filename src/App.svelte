@@ -9,7 +9,6 @@
 	onMount(async () => {
 		const res = await fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=' + apiKey);
 		articles = await res.json();
-		// (Line below) added due to the structure of an API
 		results = articles.results;
 	});
 </script>
